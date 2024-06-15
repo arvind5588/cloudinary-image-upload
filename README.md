@@ -5,16 +5,16 @@
 
 # Setup
 
-##1. Clone the Repository
+## 1. Clone the Repository
 
     git clone https://github.com/arvind5588/cloudinary-image-upload
     cd cloudinary-image-upload
 
-##2. Install Dependencies
+## 2. Install Dependencies
 
     npm install
 
-##3. Configure Environment Variables
+## 3. Configure Environment Variables
 Create a .env file in the root of the project and add your Cloudinary credentials:
 
     env
@@ -26,53 +26,53 @@ Create a .env file in the root of the project and add your Cloudinary credential
     
     - Replace your_cloud_name, your_api_key, and your_api_secret with your actual Cloudinary credentials.
 
-##4. Start the Server
+## 4. Start the Server
 
     npm start
     
     - The server will start on the port specified in your .env file (default is 3000)
 
-#API Endpoints
+# API Endpoints
 
-    ##Upload an Image
+    ## Upload an Image
     
-    ##URL
+    ## URL
     
     POST /upload
     
     
-    ##Description
+    ## Description
     Uploads an image to Cloudinary and returns the URL of the uploaded image.
     
-    ##Request
+    ## Request
     Content-Type: multipart/form-data
     
-    ##Body:
+    ## Body:
     
     file: The image file to upload.
     product_id: The ID of the product the image is associated with.
     
-    ##Response
+    ## Response
     200 OK: Returns the URL of the uploaded image.
     400 Bad Request: Returns an error if the upload fails.
     
-    ##Example using Postman
+    ## Example using Postman
     
-    ##Open Postman.
+    ## Open Postman.
     - Create a new POST request to http://localhost:3000/upload.
     - In the Body tab, select form-data.
     - Add a new key file, change the type to File, and select an image file.
     - Add another key product_id and set its value.
     - Send the request.
     
-    ##Example Response
+    ## Example Response
     
     {
       "message": "Image uploaded successfully",
       "url": "https://res.cloudinary.com/your_cloud_name/image/upload/v1623937832/sample.jpg"
     }
 
-#Project Structure
+# Project Structure
 
 cloudinary-image-upload/
 ├── node_modules/
