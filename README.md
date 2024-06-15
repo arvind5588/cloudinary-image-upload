@@ -1,4 +1,4 @@
-#Prerequisites
+# Prerequisites
 - Node.js (v14.x or later)
 - npm (v6.x or later)
 - A Cloudinary account (you can sign up [here](#https://cloudinary.com/))
