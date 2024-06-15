@@ -74,6 +74,8 @@ Create a .env file in the root of the project and add your Cloudinary credential
 
 # Project Structure
 
+```
+
 cloudinary-image-upload/
 ├── node_modules/
 ├── src/
@@ -88,3 +90,4 @@ cloudinary-image-upload/
 ├── .gitignore
 ├── package.json
 └── README.md
+```
