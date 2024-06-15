@@ -6,30 +6,32 @@
 # Setup
 
 ## 1. Clone the Repository
-
+    ```
     git clone https://github.com/arvind5588/cloudinary-image-upload
     cd cloudinary-image-upload
-
+    ```
+    
 ## 2. Install Dependencies
-
+    ```
     npm install
-
+    ```
+    
 ## 3. Configure Environment Variables
 Create a .env file in the root of the project and add your Cloudinary credentials:
-
-    env
-    Copy code
+    ```
     CLOUDINARY_CLOUD_NAME=your_cloud_name
     CLOUDINARY_API_KEY=your_api_key
     CLOUDINARY_API_SECRET=your_api_secret
     PORT=3000
+    ```
     
-    - Replace your_cloud_name, your_api_key, and your_api_secret with your actual Cloudinary credentials.
+   ### - Replace your_cloud_name, your_api_key, and your_api_secret with your actual Cloudinary credentials.
 
 ## 4. Start the Server
-
-    npm start
-    
+     ```
+     npm start
+     ```
+     
     - The server will start on the port specified in your .env file (default is 3000)
 
 # API Endpoints
@@ -37,9 +39,9 @@ Create a .env file in the root of the project and add your Cloudinary credential
     ## Upload an Image
     
     ## URL
-    
-    POST /upload
-    
+     ```
+     POST /upload
+     ```
     
     ## Description
     Uploads an image to Cloudinary and returns the URL of the uploaded image.
@@ -66,12 +68,13 @@ Create a .env file in the root of the project and add your Cloudinary credential
     - Send the request.
     
     ## Example Response
-    
+     ```
     {
       "message": "Image uploaded successfully",
       "url": "https://res.cloudinary.com/your_cloud_name/image/upload/v1623937832/sample.jpg"
     }
-
+     ```
+     
 # Project Structure
 
 ```
