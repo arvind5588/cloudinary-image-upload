@@ -1,0 +1,44 @@
+# Node modules directory
+node_modules/
+
+# dotenv environment variable file
+.env
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# OS-specific files
+.DS_Store
+
+# Optional npm cache directory
+.npm
+
+# Yarn
+.yarn-integrity
+
+# Editor directories and files
+.idea
+.vscode
+*.sublime-project
+*.sublime-workspace
+
+# Optional coverage directory used by tools like istanbul
+coverage/
+
+# Optional eslint cache
+.eslintcache
+
+# Optional nyc coverage
+.nyc_output/
+
+# Optional REPL history
+node_repl_history
+
+# Optional project dependency directories
+jspm_packages/
+
+# Optional local configuration file
+.env.local
+.env.*.local
